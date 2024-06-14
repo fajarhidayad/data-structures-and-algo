@@ -6,7 +6,8 @@
   "scripts": {
     "ll": "node ./data-structures/linked-list.js",
     "dll": "node ./data-structures/doubly-linked-list",
-    "stack": "node ./data-structures/stack.js"
+    "stack": "node ./data-structures/stack.js",
+    "queue": "node ./data-structures/queue.js"
   },
   "keywords": [],
   "author": "",
