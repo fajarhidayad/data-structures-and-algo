@@ -4,8 +4,9 @@
   "description": "",
   "main": "linked-list.js",
   "scripts": {
-    "ll": "node linked-list.js",
-    "dll": "node doubly-linked-list"
+    "ll": "node ./data-structures/linked-list.js",
+    "dll": "node ./data-structures/doubly-linked-list",
+    "stack": "node ./data-structures/stack.js"
   },
   "keywords": [],
   "author": "",

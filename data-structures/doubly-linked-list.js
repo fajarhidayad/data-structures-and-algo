@@ -98,28 +98,28 @@ class DoublyLinkedList {
   }
 
   set(index, value) {
-    if (index < 0 || index >= this.length) return undefined;
+    if (index < 0 || index >= this.length) return false;
 
     let temp = this.get(index);
     temp.value = value;
 
-    return temp;
+    return true;
   }
 
   insert(index, value) {
     if (index < 0 || index > this.length) return false;
 
-    let temp = this.get(index - 1);
+    let before = this.get(index - 1);
 
     if (index === 0) this.unshift(value);
     else if (index === this.length) this.push(value);
     else {
       let newNode = new Node(value);
-      let next = temp.next;
-      newNode.prev = temp;
-      newNode.next = next;
-      temp.next = newNode;
-      next.prev = newNode;
+      let after = before.next;
+      newNode.prev = before;
+      newNode.next = after;
+      before.next = newNode;
+      after.prev = newNode;
 
       this.length++;
     }
