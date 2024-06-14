@@ -1,0 +1,12 @@
+{
+  "name": "data-structures",
+  "version": "1.0.0",
+  "description": "",
+  "main": "linked-list.js",
+  "scripts": {
+    "ll": "node linked-list.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
