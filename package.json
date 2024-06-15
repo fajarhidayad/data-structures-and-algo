@@ -8,7 +8,8 @@
     "dll": "node ./data-structures/doubly-linked-list",
     "stack": "node ./data-structures/stack.js",
     "queue": "node ./data-structures/queue.js",
-    "bst": "node ./data-structures/bst.js"
+    "bst": "node ./data-structures/bst.js",
+    "hash-table": "node ./data-structures/hash-table.js"
   },
   "keywords": [],
   "author": "",
