@@ -7,7 +7,8 @@
     "ll": "node ./data-structures/linked-list.js",
     "dll": "node ./data-structures/doubly-linked-list",
     "stack": "node ./data-structures/stack.js",
-    "queue": "node ./data-structures/queue.js"
+    "queue": "node ./data-structures/queue.js",
+    "bst": "node ./data-structures/bst.js"
   },
   "keywords": [],
   "author": "",
