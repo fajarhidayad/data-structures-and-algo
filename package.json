@@ -10,7 +10,8 @@
     "queue": "node ./data-structures/queue.js",
     "bst": "node ./data-structures/bst.js",
     "hash-table": "node ./data-structures/hash-table.js",
-    "graph": "node ./data-structures/graph.js"
+    "graph": "node ./data-structures/graph.js",
+    "heap": "node ./data-structures/heap.js"
   },
   "keywords": [],
   "author": "",
