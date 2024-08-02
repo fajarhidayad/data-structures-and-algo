@@ -117,6 +117,68 @@ class BST {
   deleteNode(value) {
     this.root = this.#deleteNode(value, this.root);
   }
+
+  BFS() {
+    let currentNode = this.root;
+    let queue = [];
+    let results = [];
+    queue.push(currentNode);
+
+    while (queue.length) {
+      currentNode = queue.shift();
+      results.push(currentNode.value);
+      if (currentNode.left) queue.push(currentNode.left);
+      if (currentNode.right) queue.push(currentNode.right);
+    }
+    return results;
+  }
+
+  DFSPreOrder() {
+    let results = [];
+
+    function traverse(currentNode) {
+      results.push(currentNode.value);
+      if (currentNode.left) traverse(currentNode.left);
+      if (currentNode.right) traverse(currentNode.right);
+    }
+
+    traverse(this.root);
+    return results;
+  }
+
+  DFSPostOrder() {
+    let results = [];
+
+    function traverse(currentNode) {
+      if (currentNode.left) traverse(currentNode.left);
+      if (currentNode.right) traverse(currentNode.right);
+      results.push(currentNode.value);
+    }
+
+    traverse(this.root);
+    return results;
+  }
+
+  DFSInOrder() {
+    let results = [];
+
+    function traverse(currentNode) {
+      if (currentNode.left) traverse(currentNode.left);
+      results.push(currentNode.value);
+      if (currentNode.right) traverse(currentNode.right);
+    }
+
+    traverse(this.root);
+    return results;
+  }
 }
 
 const bst = new BST();
+bst.insert(5);
+bst.insert(2);
+bst.insert(1);
+bst.insert(3);
+bst.insert(7);
+bst.insert(6);
+bst.insert(8);
+console.log(bst.DFSInOrder());
