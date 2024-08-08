@@ -12,7 +12,8 @@
     "hash-table": "node ./data-structures/hash-table.js",
     "graph": "node ./data-structures/graph.js",
     "heap": "node ./data-structures/heap.js",
-    "bubble": "node ./algorithms/bubbleSort.js"
+    "bubble": "node ./algorithms/bubbleSort.js",
+    "selection": "node ./algorithms/selectionSort.js"
   },
   "keywords": [],
   "author": "",
