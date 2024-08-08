@@ -13,7 +13,8 @@
     "graph": "node ./data-structures/graph.js",
     "heap": "node ./data-structures/heap.js",
     "bubble": "node ./algorithms/bubbleSort.js",
-    "selection": "node ./algorithms/selectionSort.js"
+    "selection": "node ./algorithms/selectionSort.js",
+    "insertion": "node ./algorithms/insertionSort.js"
   },
   "keywords": [],
   "author": "",
